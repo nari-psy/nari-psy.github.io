@@ -1,1 +1,0 @@
-# nari-psy.github.io
