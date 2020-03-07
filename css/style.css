@@ -1,0 +1,42 @@
+
+body {
+    background-color:rgb(221, 253, 255);
+}
+
+h2{
+    color : black ;
+    font-size: 18px;
+    line-height : 2.0 ;
+    font-family: "Century Gothic";
+}
+
+h1{
+    color : black ;
+    font-size: 30px;
+    line-height : 2.0 ;
+    font-family: "Century Gothic";
+}
+
+p{
+    color : black ;
+    font-size: 15px;
+    line-height : 1.5 ;
+    font-family: "Century Gothic";
+}
+
+.text1 {
+    color : black ;
+    font-size: 30px;
+    line-height : 2.0 ;
+    font-family: "Times New Roman";
+}
+
+.image1 {
+    width:225px;
+    height:150px;
+}
+
+.image2 {
+    width:150px;
+    height:225px;
+}
