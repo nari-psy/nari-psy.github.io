@@ -7,25 +7,35 @@
 <!--<![endif]-->
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-	<meta charset=“UTF-8”>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 【ビューポート】 -->
-	<meta name=“viewport” content=“width=device-width,initial-scale=1.0”>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<!--【OGP設定】 -->
-	<meta property="og:title" content="ページのタイトル">
+	<meta property="og:title" content="出演者情報｜成増サイケデリック村オンライン">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="ページのURL">
+	<meta property="og:url" content="http://nari-psy/github.io">
 	<meta property="og:image" content="サムネイル画像のURL">
-	<meta property="og:site_name" content="サイト名">
-	<meta property="og:description" content="ページ紹介文全角150字程度">
-	<meta property="fb:app_id" content="任意のID">
-	<meta name=“twitter:card” content=“サムネイル画像の大きさ">
+	<meta property="og:site_name" content="成増サイケデリック村オンライン">
+	<meta property="og:description" content="成増サイケデリック村オンラインの出演者情報です。">
+	<meta property="fb:app_id" content="2663966013838135">
+	<meta name="twitter:card" content="summary">
 	<meta property="og:locale" content="ja_JP">
-	<title>サイトタイトル</title>
+	<title>出演者情報｜成増サイケデリック村オンライン</title>
 	<!-- 【CSS】 -->
-	<link rel=“stylesheet” href=“css/normalize.css”>
-	<link rel=“stylesheet” href=“css/style.css”>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/cast.css">
 	<!--【ウェブフォント】-->
+
+	<!--【ページ内スムーススクロール】-->
+	<script src="js/smooth-scroll.polyfills.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			header: '#header',
+			speed: 800,
+		});
+
+	</script>
 </head>
 
 <body>
@@ -33,6 +43,50 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+	<header id="header">
+		<h1>成増サイケデリック村オンライン&emsp;出演者情報</h1>
+	</header>
+
+	<section class="castWrapper">
+		<a href="#header"><img class="linkToTop" src="#"></a>
+		<article class="castList">
+			<h2>Vol.4</h2>
+			<time datetime="2020-05-03">2020.5.3&emsp;16:40&nbsp;START</time>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+			<div class="castInfo">
+				<h4 class="castName"></h4>
+				<img src="#" class="castPic" alt="#">
+				<p class="castDesc"></p>
+			</div>
+		</article>
+	</section>
+	<footer id="footer">
+
+	</footer>
 </body>
 
 </html>
