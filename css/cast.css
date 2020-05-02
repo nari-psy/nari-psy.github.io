@@ -139,6 +139,13 @@ body {
 		list-style: none;
 	}
 
+	.footerNav {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		width: 20%;
+	}
+
 	.navLink {
 		display: inline-block;
 		margin: 2vw;
@@ -288,8 +295,7 @@ body {
 		display: block;
 		position: relative;
 		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
+		width: 40%;
 	}
 
 	.navLink {
@@ -443,8 +449,7 @@ body {
 		display: block;
 		position: relative;
 		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
+		width: 40%;
 	}
 
 	.navLink {
