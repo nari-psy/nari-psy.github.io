@@ -20,126 +20,446 @@ body {
 	background-size: cover;
 }
 
-header {
-	display: block;
-	position: relative;
-	margin: 2vw 0 3vw;
-	padding: 1vw 0;
-	width: 100%;
-	height: 6.5vw;
-	background-color: rgb(255, 255, 255, 0.6);
+/*=====================================================*/
+/*=====================================================*/
+/*PC用。画面サイズが769px以上の場合*/
+@media screen and (min-width:769px) {
+
+	header {
+		display: block;
+		position: relative;
+		margin: 2vw 0 3vw;
+		padding: 1vw 0;
+		width: 100%;
+		height: 6.5vw;
+		background-color: rgb(255, 255, 255, 0.6);
+	}
+
+	.castTitle {
+		display: block;
+		position: absolute;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
+		height: 5vw;
+		font-size: 4.5vw;
+		line-height: 1.8;
+	}
+
+	.spbr {
+		display: none;
+	}
+
+	.castList {
+		display: block;
+		position: reltive;
+		margin-bottom: 6vw;
+		width: 100%;
+		height: 100%;
+	}
+
+	.liveDate {
+		display: block;
+		position: relative;
+		margin-left: 0.5vw;
+		margin-bottom: 0;
+		width: 97.5%;
+		height: 5vw;
+		background-color: rgb(255, 255, 255, 0.6);
+		line-height: 1.3;
+	}
+
+	.liveDate h2 {
+		margin: 0 0 0 1vw;
+		font-size: 2.5vw;
+	}
+
+	.liveDate time {
+		margin: 0 0 0 1vw;
+		font-size: 1.3vw;
+	}
+
+	.castInfoWrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 98%;
+		margin-top: 0.3vw;
+	}
+
+	.castInfo {
+		display: inline-block;
+		position: relative;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		-ms-flex-line-pack: start;
+		align-content: flex-start;
+		width: 30%;
+		height: 100%;
+		background-color: rgb(255, 255, 255, 0.6);
+	}
+
+	.castInfoFirst {
+		margin-left: 0.5vw;
+	}
+
+	.castInfoMargin {
+		margin-left: 0.5vw;
+	}
+
+	.castName {
+		margin: 0.7vw 0 0.7vw 0.7vw;
+		font-size: 1.4vw;
+	}
+
+	.castPic {
+		display: block;
+		position: relative;
+		margin: 0 0 0 1vw;
+		width: 80%;
+	}
+
+	.castDesc {
+		display: block;
+		position: relative;
+		margin: 1vw;
+		font-size: 1.2vw;
+	}
+
+	footer {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		width: 100%;
+		height: 5vw;
+		background-color: rgb(55, 55, 55, 0.9);
+		list-style: none;
+	}
+
+	.navLink {
+		display: inline-block;
+		margin: 2vw;
+		font-size: 1.3vw;
+	}
+
+	.footerNav a:visited {
+		color: #fff;
+	}
+
+	.navLinkA {
+		color: #fff;
+	}
 }
 
-.castTitle {
-	display: block;
-	position: absolute;
-	margin-top: auto;
-	margin-bottom: auto;
-	width: 100%;
-	height: 5vw;
-	font-size: 4.5vw;
-	line-height: 1.8;
+/*=====================================================*/
+/*=====================================================*/
+/*スマホ用。画面サイズが481px以下の場合。*/
+@media screen and (max-width:480px) {
+	header {
+		display: block;
+		position: relative;
+		margin: 4vw 0 6vw;
+		padding: 1vw 0;
+		width: 100%;
+		height: 13vw;
+		background-color: rgb(255, 255, 255, 0.6);
+	}
+
+	.castTitle {
+		display: block;
+		position: relative;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
+		height: 5vw;
+		font-size: 6vw;
+		text-align: center;
+	}
+
+	.castList {
+		display: block;
+		position: reltive;
+		margin-bottom: 13vw;
+		width: 100%;
+		height: 100%;
+	}
+
+	.liveDate {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1vw;
+		width: 95%;
+		height: 9vw;
+		background-color: rgb(255, 255, 255, 0.6);
+		line-height: 1.3;
+	}
+
+	.liveDate h2 {
+		margin: 0;
+		padding: 0;
+		padding-top: 0.5vw;
+		font-size: 4vw;
+		text-align: center;
+	}
+
+	.liveDate time {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	.castInfoWrapper {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		height: 100%;
+	}
+
+	.castInfo {
+		display: block;
+		position: relative;
+		margin-top: 2vw;
+		padding-bottom: 2vw;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(255, 255, 255, 0.6);
+		clear: both;
+	}
+
+	.castName {
+		margin: 0;
+		padding: 2vw;
+		padding-bottom: 1vw;
+		font-size: 4vw;
+	}
+
+	.castPic {
+		display: block;
+		position: relative;
+		float: left;
+		margin: 1vw;
+		width: 50%;
+	}
+
+	.castDesc {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 1vw;
+		height: 100%;
+		font-size: 4vw;
+	}
+
+	.andPic {
+		display: block;
+		position: relative;
+		float: right;
+		margin: 0;
+		width: 44%;
+		height: 100%;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	footer {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		width: 100%;
+		height: 10vw;
+		background-color: rgb(55, 55, 55, 0.9);
+		list-style: none;
+	}
+
+	.footerNav {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.navLink {
+		display: inline-block;
+		position: relative;
+		margin: 2.7vw;
+		font-size: 3vw;
+	}
+
+	.footerNav a:visited {
+		color: #fff;
+	}
+
+	.navLinkA {
+		color: #fff;
+	}
+
 }
 
-.castList {
-	display: block;
-	position: reltive;
-	margin-bottom: 6vw;
-	width: 100%;
-	height: 100%;
-}
+/*=====================================================*/
+/*=====================================================*/
+/*タブレット用。画面サイズが481px以上768px以下の場合*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	header {
+		display: block;
+		position: relative;
+		margin: 4vw 0 6vw;
+		padding: 1vw 0;
+		width: 100%;
+		height: 13vw;
+		background-color: rgb(255, 255, 255, 0.6);
+	}
 
-.liveDate {
-	display: block;
-	position: relative;
-	margin-left: 0.5vw;
-	margin-bottom: 0;
-	width: 97.5%;
-	height: 5vw;
-	background-color: rgb(255, 255, 255, 0.6);
-	line-height: 1.3;
-}
+	.castTitle {
+		display: block;
+		position: relative;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
+		height: 5vw;
+		font-size: 6vw;
+		text-align: center;
+	}
 
-.liveDate h2 {
-	margin: 0 0 0 1vw;
-	font-size: 2.5vw;
-}
+	.castList {
+		display: block;
+		position: reltive;
+		margin-bottom: 13vw;
+		width: 100%;
+		height: 100%;
+	}
 
-.liveDate time {
-	margin: 0 0 0 1vw;
-	font-size: 1.3vw;
-}
+	.liveDate {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1vw;
+		width: 95%;
+		height: 9vw;
+		background-color: rgb(255, 255, 255, 0.6);
+		line-height: 1.3;
+	}
 
-.castInfoWrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 98%;
-	margin-top: 0.3vw;
-}
+	.liveDate h2 {
+		margin: 0;
+		padding: 0;
+		padding-top: 0.5vw;
+		font-size: 4vw;
+		text-align: center;
+	}
 
-.castInfo {
-	display: inline-block;
-	position: relative;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-	-ms-flex-line-pack: start;
-	align-content: flex-start;
-	width: 30%;
-	height: 100%;
-	background-color: rgb(255, 255, 255, 0.6);
-}
+	.liveDate time {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		font-size: 3vw;
+		text-align: center;
+	}
 
-.castInfoFirst {
-	margin-left: 0.5vw;
-}
+	.castInfoWrapper {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		height: 100%;
+	}
 
-.castInfoMargin {
-	margin-left: 0.5vw;
-}
+	.castInfo {
+		display: block;
+		position: relative;
+		margin-top: 2vw;
+		padding-bottom: 2vw;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(255, 255, 255, 0.6);
+		clear: both;
+	}
 
-.castName {
-	margin: 0.7vw 0 0.7vw 0.7vw;
-	font-size: 1.4vw;
-}
+	.castName {
+		margin: 0;
+		padding: 2vw;
+		padding-bottom: 1vw;
+		font-size: 4vw;
+	}
 
-.castPic {
-	display: block;
-	position: relative;
-	margin: 0 0 0 1vw;
-	width: 80%;
-}
+	.castPic {
+		display: block;
+		position: relative;
+		float: left;
+		margin: 1vw;
+		width: 50%;
+	}
 
-.castDesc {
-	display: block;
-	position: relative;
-	margin: 1vw;
-	font-size: 1.2vw;
-}
+	.castDesc {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 1vw;
+		height: 100%;
+		font-size: 4vw;
+	}
 
-footer {
-	display: block;
-	position: fixed;
-	bottom: 0;
-	margin: 0;
-	width: 100%;
-	height: 5vw;
-	background-color: rgb(55, 55, 55, 0.9);
-	list-style: none;
-}
+	.andPic {
+		display: block;
+		position: relative;
+		float: right;
+		margin: 0;
+		width: 44%;
+		height: 100%;
+	}
 
-.navLink {
-	display: inline-block;
-	margin: 2vw;
-	font-size: 1.3vw;
-}
+	.clear {
+		clear: both;
+	}
 
-.footerNav a:visited {
-	color: #fff;
-}
+	footer {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		width: 100%;
+		height: 10vw;
+		background-color: rgb(55, 55, 55, 0.9);
+		list-style: none;
+	}
 
-.navLinkA {
-	color: #fff;
+	.footerNav {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.navLink {
+		display: inline-block;
+		position: relative;
+		margin: 2.5vw;
+		font-size: 3vw;
+	}
+
+	.footerNav a:visited {
+		color: #fff;
+	}
+
+	.navLinkA {
+		color: #fff;
+	}
+
 }
